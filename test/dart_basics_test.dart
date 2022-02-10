@@ -2,15 +2,15 @@ import 'package:dart_basics/dart_basics.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
-
-    setUp(() {
-      // Additional setup goes here.
+  group('Тестируем функции задачи 1', () {
+    test('НОД', () {
+      expect(gcd(36, 12), 12);
     });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    test('НОК', () {
+      expect(lcm(36, 12), 36);
+    });
+    test('Разложение на множители', () {
+      expect(simp(21), [3, 7]);
     });
   });
 }

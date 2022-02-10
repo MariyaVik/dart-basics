@@ -1,6 +1,6 @@
 import 'package:dart_basics/dart_basics.dart';
+import 'package:dart_basics/src/task_1.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  print(simp(21));
 }
