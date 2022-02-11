@@ -72,4 +72,15 @@ void main() {
       expect(findInt(['cat', 'dog']), []);
     });
   });
+
+  group('Тестируем функции задачи 6', () {
+    Point p1 = Point(5, -9, 2.5);
+    Point p2 = Point(-7, -25, 7);
+    test('Нулевое расстояние', () {
+      expect(p1.distanceTo(p1), 0);
+    });
+    test('Расстояние', () {
+      expect(p1.distanceTo(p2), 20.5);
+    });
+  });
 }
