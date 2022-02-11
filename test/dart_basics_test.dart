@@ -13,4 +13,13 @@ void main() {
       expect(simp(21), [3, 7]);
     });
   });
+
+  group('Тестируем функции задачи 2', () {
+    test('Из десятичной в двоичную', () {
+      expect(DemicalToBinary(8), "1000");
+    });
+    test('Из двоичной в десятичную', () {
+      expect(BinaryToDemical("111"), 7);
+    });
+  });
 }
