@@ -8,3 +8,4 @@ export 'src/task_4.dart';
 export 'src/task_5.dart';
 export 'src/task_6.dart';
 export 'src/task_7.dart';
+export 'src/task_8.dart';
