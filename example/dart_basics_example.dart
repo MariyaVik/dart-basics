@@ -16,6 +16,7 @@ void main() {
   // print(simp(0));
 
 //------------Task 2-----------------
+  print(binaryToDemical("-111"));
 
 //------------Task 6-----------------
   // Point p1 = Point(5, -9, 2.21);

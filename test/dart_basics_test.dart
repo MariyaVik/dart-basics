@@ -27,8 +27,20 @@ void main() {
     test('Из десятичной в двоичную', () {
       expect(demicalToBinary(8), "1000");
     });
+    test('Из десятичной в двоичную 0', () {
+      expect(demicalToBinary(0), "0");
+    });
+    test('Из десятичной в двоичную отрицательное', () {
+      expect(demicalToBinary(-5), "-101");
+    });
     test('Из двоичной в десятичную', () {
       expect(binaryToDemical("111"), 7);
+    });
+    test('Из двоичной в десятичную отрицательное', () {
+      expect(binaryToDemical("-111"), -7);
+    });
+    test('Из двоичной в десятичную не число', () {
+      expect(binaryToDemical("один"), null);
     });
   });
 
