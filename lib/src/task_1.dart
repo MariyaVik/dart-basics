@@ -10,18 +10,22 @@ int gcd(int a, int b) {
   return a;
 }
 
-int lcm(int a, int b) {
+int? lcm(int a, int b) {
+  if (a == 0 && b == 0) return null;
   int pr = a * b;
-  int c;
   while (b > 0) {
-    c = b;
+    int c = b;
     b = a % b;
     a = c;
   }
   return pr ~/ a;
 }
 
-List<int> simp(int n) {
+List<int>? simp(int n) {
+  if (n < 1) {
+    print("Введите натуральное число");
+    return null;
+  }
   List<int> simp = [];
   int i = 2;
   while (i < sqrt(n).toInt()) {
