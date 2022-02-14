@@ -1,6 +1,6 @@
 import 'package:dart_basics/dart_basics.dart';
-import 'package:dart_basics/src/task_6.dart';
-import 'package:dart_basics/src/task_7.dart';
+// import 'package:dart_basics/src/task_6.dart';
+// import 'package:dart_basics/src/task_7.dart';
 import 'package:dart_basics/src/task_8.dart';
 
 void main() {

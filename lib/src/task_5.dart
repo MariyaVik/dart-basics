@@ -12,9 +12,10 @@ List<int> findInt(List<String> st) {
     "eight": 8,
     "nine": 9,
   };
-  st.forEach((element) {
-    if (map.containsKey(element) && !result.contains(map[element]))
+  for (var element in st) {
+    if (map.containsKey(element) && !result.contains(map[element])) {
       result.add(map[element]);
-  });
+    }
+  }
   return result;
 }

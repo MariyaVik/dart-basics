@@ -42,4 +42,3 @@ from the package authors, and more.
 ## Need to do
 
   * handle exceptions in task 7
-  * rename variables according to style

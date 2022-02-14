@@ -16,19 +16,19 @@ void main() {
 
   group('Тестируем функции задачи 2', () {
     test('Из десятичной в двоичную', () {
-      expect(DemicalToBinary(8), "1000");
+      expect(demicalToBinary(8), "1000");
     });
     test('Из двоичной в десятичную', () {
-      expect(BinaryToDemical("111"), 7);
+      expect(binaryToDemical("111"), 7);
     });
   });
 
   group('Тестируем функции задачи 3', () {
     test('Строка с числами', () {
-      expect(NumInStr("Тут есть число 2 и число 21.21"), [2, 21.21]);
+      expect(numInStr("Тут есть число 2 и число 21.21"), [2, 21.21]);
     });
     test('Из двоичной в десятичную', () {
-      expect(NumInStr("А здесь нет чисел :("), []);
+      expect(numInStr("А здесь нет чисел :("), []);
     });
   });
 

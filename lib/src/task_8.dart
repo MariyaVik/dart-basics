@@ -29,13 +29,13 @@ class UserManager<T extends User> {
   }
 
   void printEmails<L extends AdminUser>() {
-    users.forEach((element) {
+    for (var element in users) {
       if (element.runtimeType == AdminUser) {
         AdminUser admin = element as AdminUser;
         print(admin.getMailSystem());
       } else {
         print(element.email);
       }
-    });
+    }
   }
 }
