@@ -1,10 +1,10 @@
 import 'dart:math';
 
 import 'package:dart_basics/dart_basics.dart';
-import 'package:dart_basics/src/task_1.dart';
-import 'package:dart_basics/src/task_2.dart';
+// import 'package:dart_basics/src/task_1.dart';
+// import 'package:dart_basics/src/task_2.dart';
 // import 'package:dart_basics/src/task_6.dart';
-// import 'package:dart_basics/src/task_7.dart';
+import 'package:dart_basics/src/task_7.dart';
 // import 'package:dart_basics/src/task_8.dart';
 
 void main() {
@@ -16,7 +16,7 @@ void main() {
   // print(simp(0));
 
 //------------Task 2-----------------
-  print(binaryToDemical("-111"));
+  // print(binaryToDemical("-111"));
 
 //------------Task 6-----------------
   // Point p1 = Point(5, -9, 2.21);
@@ -25,7 +25,7 @@ void main() {
   // print(p1.distanceTo(p2));
 
 //------------Task 7-----------------
-  //print(2.root(2));
+  print((-4).root(3));
 
 //------------Task 8-----------------
   // User m = User('m@gmail.com');

@@ -1,5 +1,3 @@
-// Тут собственная функция pow
-
 double _pow(double x, int degree) {
   double result = 1;
   for (var i = 0; i < degree; i++) {
@@ -8,10 +6,17 @@ double _pow(double x, int degree) {
   return result;
 }
 
-// ПОКА НЕ ТО... ПРОШЕРСТИТЬ ЗАНОВО
 extension RootOfNum on num {
   double root(int rootDegree, [double eps = 0.001]) {
-    double x0 = this * 1;
+    if (this == 0) return 0;
+
+    if (this < 0) {
+      if (rootDegree % 2 == 0) {
+        throw ArgumentError();
+      }
+    }
+
+    double x0 = abs() * 1;
     double result =
         ((rootDegree - 1) * x0 + this / _pow(x0, rootDegree - 1)) / rootDegree;
 
@@ -20,6 +25,7 @@ extension RootOfNum on num {
       result = ((rootDegree - 1) * result + this / _pow(x0, rootDegree - 1)) /
           rootDegree;
     }
+
     return result;
   }
 }
